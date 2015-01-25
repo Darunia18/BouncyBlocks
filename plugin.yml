@@ -9,7 +9,7 @@ website: https://github.com/Darunia18/BouncyBlocks
 
 commands:
     bounce:
-        description: Enales or disables bouncy beds
+        description: Enales or disables bouncing for the sender
         usage:  /bounce <true|false>
         permission: bouncyblocks.command
         
@@ -19,11 +19,11 @@ permissions:
         default: op
         children:
             bouncyblocks.command:
-                description: Player can use the bouncyblock command
+                description: Player can use the bounce command
                 default: op
             bouncyblocks.bounce:
-                description: Player can bounce on a trampoline block
+                description: Player can bounce on a BouncyBlock
                 default: op
             bouncyblocks.takedamage:
-                description: Player will take fall damage from bouncing on a trampoline
+                description: Player will take fall damage from bouncing on a BouncyBlock
                 default: false
