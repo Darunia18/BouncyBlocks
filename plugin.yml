@@ -1,0 +1,29 @@
+name: BouncyBlocks
+main: Darunia18\BouncyBlocks\BouncyBlocks
+version: 1.0
+api: 1.9.0
+author: Darunia18
+description: Bounce on any block as if it were a trampoline.
+load: POSTWORLD
+website: https://github.com/Darunia18/BouncyBlocks
+
+commands:
+    bounce:
+        description: Enales or disables bouncy beds
+        usage:  /bounce <true|false>
+        permission: bouncyblocks.command
+        
+permissions:
+    bouncyblocks:
+        description: Gives player access to all BouncyBlocks permissions
+        default: op
+        children:
+            bouncyblocks.command:
+                description: Player can use the bouncyblock command
+                default: op
+            bouncyblocks.bounce:
+                description: Player can bounce on a trampoline block
+                default: op
+            bouncyblocks.takedamage:
+                description: Player will take fall damage from bouncing on a trampoline
+                default: false
