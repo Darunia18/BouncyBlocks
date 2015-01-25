@@ -65,7 +65,7 @@ class BouncyBlocks extends PluginBase implements Listener{
                     }
                 }
                 else{
-                    $sender->sendMessage("Usage: /bounce <true|false");
+                    $sender->sendMessage("Usage: /bounce <true|false>");
                     return true;
                 }
             break;
