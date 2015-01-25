@@ -1,0 +1,13 @@
+# BouncyBlocks Config
+
+# This sets the maximum height a player can bounce.
+# 1=10 blocks from the trampoline, 2=25 blocks from the trampoline, and 3=40 blocks from the trampoline
+max: 3
+
+# This is a list of all the blocks that will be able to be used as trampolines.
+# Please use block IDs for the blocks you would like to be used.
+# Block names will be added in a later update.
+blocks:
+    - 26
+    - 99
+    - 100
