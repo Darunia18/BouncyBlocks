@@ -4,12 +4,9 @@ namespace Darunia18\BouncyBlocks;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\entity\Entity;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\player\PlayerMoveEvent;
 use pocketmine\event\Listener;
-use pocketmine\level\Level;
-use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
@@ -24,13 +21,10 @@ class BouncyBlocks extends PluginBase implements Listener{
     public $disabled;
     
     public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveDefaultConfig();
-        $this->reloadConfig();
-        
-        $config = $this->getConfig();
-        $this->max = $config->get("max");
-        $this->blocks = $config->get("blocks");
+
+        $this->max = $this->getConfig("max");
+        $this->blocks = $this->getConfig("blocks");
         $this->fall = new \SplObjectStorage();
         $this->bounceVelocity = new \SplObjectStorage();
         $this->disabled = new \SplObjectStorage();
