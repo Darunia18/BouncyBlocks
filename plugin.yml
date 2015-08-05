@@ -1,6 +1,6 @@
 name: BouncyBlocks
 main: Darunia18\BouncyBlocks\BouncyBlocks
-version: 1.0
+version: 1.1
 api: 1.9.0
 author: Darunia18
 description: Bounce on any block as if it were a trampoline.
