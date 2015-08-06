@@ -20,10 +20,10 @@ permissions:
         children:
             bouncyblocks.command:
                 description: Player can use the bounce command
-                default: op
+                default: true
             bouncyblocks.bounce:
                 description: Player can bounce on a BouncyBlock
-                default: op
+                default: true
             bouncyblocks.takedamage:
                 description: Player will take fall damage from bouncing on a BouncyBlock
                 default: false
